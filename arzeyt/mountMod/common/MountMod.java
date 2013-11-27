@@ -16,9 +16,9 @@ import cpw.mods.fml.common.network.NetworkMod;
 import cpw.mods.fml.common.network.NetworkMod.SidedPacketHandler;
 import cpw.mods.fml.common.network.NetworkRegistry;
 
-@Mod(modid="MountMod",name="Mount Mod",version="0.2")
+@Mod(modid="MountMod",name="Mount Mod",version="1.0")
 
-@NetworkMod(clientSideRequired=true, serverSideRequired=false, 
+@NetworkMod(clientSideRequired=false, serverSideRequired=true, 
 clientPacketHandlerSpec = @SidedPacketHandler(channels = {"MountMod"}, packetHandler = 
 MountModClientPacketHandler.class), 
 serverPacketHandlerSpec = @SidedPacketHandler(channels = {"MountMod"}, packetHandler = 
